@@ -47,7 +47,7 @@ function createTask(objectData) {
     const img = document.createElement('img')
     img.src = './trash.svg'
     img.alt = 'trash'
-    img.width = 20
+    img.width = 30
 
     btn.appendChild(img);
 
