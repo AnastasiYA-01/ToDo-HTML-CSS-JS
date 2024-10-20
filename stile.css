@@ -1,5 +1,5 @@
 body {
-    margin: 0;
+    margin: 0; /*внешнего отступа у элемента*/
 }
 
 .wrapper {
@@ -28,38 +28,38 @@ body {
 .app__controls-input {
     border: none;
     border-radius: 10px 0 0 10px;
-    font-size: 18px;
-    padding: 5px 10px;
+    font-size: 20px;  /*размер шрифта вводимого текста */
+    padding: 5px 10px; /*расстояние сверху снизу 5, слева справа 10*/
 }
 
 .app__controls-input:focus-visible {
     outline: 0;
 }
 
-.app__controls-button {
-    border: none;
+.app__controls-button { /*всё что связано с самой кнопкой добавить */
+    border: none; 
     border-radius: 0 10px 10px 0;
     background: #FBCC28;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .app__list {
-    background: white;
+    background: white; /*белый фон под иконками задач*/ 
     border-radius: 15px;
-    padding: 20px;
+    padding: 20px; /*отступ от края белого фона до задачи */
     display: flex;
     flex-direction: column;
     gap: 20px;
-    overflow-y: auto;
+    overflow-y: auto; /*ролик при нехватки места для задач*/
 }
 
 .app__list-item {
     background: #FFEBEB;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-    padding: 30px 20px;
+    align-items: center; /*элементы в кнопке задачи по центральной горизонтали*/
+    justify-content: space-between; /*растягивает элементы задачи (галочка слева, мусорка справа, текст занимает всю середину)*/
+    gap: 10px; /*расстояние между галочкой и текстом задачи */
+    padding: 30px 20px; /*пространство красное (свеху-снизу текста задачи 30, слева-справа 20)*/
     border-radius: 10px;
 }
 
@@ -70,8 +70,9 @@ body {
 }
 
 .app__list-btn:hover {
-    background: red;
+    background: rgb(248, 90, 90); /*подсвечивает мусорку при наведении мышью*/
 }
+
 
 button:hover {
     cursor: pointer;
@@ -79,15 +80,15 @@ button:hover {
 
 .app__list-checkbox {
     display: block;
-    width: 30px;
-    height: 30px;
+    width: 20px;  /*размер клетки для галочки */
+    height: 20px;
     margin: 0;
 }
 
-.app__list-item-txt {
+.app__list-item-text {
     margin: 0;
-    flex-grow: 1;
-    overflow-x: auto;
+    flex-grow: 1; /*выравнивание текста задачи по левому краю*/
+    font-size: 20px;
 }
 
 .app__list-item_done {
