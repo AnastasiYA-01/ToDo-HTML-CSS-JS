@@ -39,7 +39,7 @@ function createTask(objectData) { /*'createTask' предназначена дл
     }
 
     const txt = document.createElement('p'); /*Создание текстового элемента*/
-    txt.classList.add('app__list-item-txt');
+    txt.classList.add('app__list-item-text');
     txt.innerText = objectData.text;
 
     const btn = document.createElement('button'); /*Создание кнопки удаления*/
