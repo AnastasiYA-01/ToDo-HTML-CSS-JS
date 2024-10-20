@@ -28,7 +28,7 @@ body {
 .app__controls-input {
     border: none;
     border-radius: 10px 0 0 10px;
-    font-size: 20px;  /*размер шрифта вводимого текста */
+    font-size: 20px;  /*размер шрифта*/
     padding: 5px 10px; /*расстояние сверху снизу 5, слева справа 10*/
 }
 
@@ -40,7 +40,12 @@ body {
     border: none; 
     border-radius: 0 10px 10px 0;
     background: #FBCC28;
-    font-size: 20px;
+    font-size: 20px; /*размер шрифта*/
+}
+
+
+.app__controls-button:hover { /*затемнение кнопки добавить при наведении курсора*/
+    background: #dbb21c;
 }
 
 .app__list {
@@ -88,7 +93,7 @@ button:hover {
 .app__list-item-text {
     margin: 0;
     flex-grow: 1; /*выравнивание текста задачи по левому краю*/
-    font-size: 20px;
+    font-size: 20px; /*размер шрифта*/
 }
 
 .app__list-item_done {
